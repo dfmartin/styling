@@ -5,6 +5,7 @@ import viteConfig from './vite.config'
 
 export default mergeConfig(
   viteConfig,
+  //@ts-ignore
   defineConfig({
     test: {
       environment: 'jsdom',
