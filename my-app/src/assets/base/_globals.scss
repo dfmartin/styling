@@ -1,0 +1,339 @@
+/* HealthTrust UI Library */
+
+h1 { /* XXL: Marketing headling / banner title */
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -2.25px;
+  color: $color-primary-dark;
+}
+
+h2 { /* XL: Marketing feature */
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.75px;
+  color: $color-primary-dark;
+}
+
+h3 { /* LG: Marketing Title */
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -1.25px;
+  color: $color-primary-dark;
+}
+
+h4 { /* Heading: Member Experience H1 - Detail page titles */
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: $color-primary-dark;
+}
+
+h5 { /* Heading 2: Search page headings */
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.675px;
+  color: $color-primary-dark;
+}
+
+h6 { /* Heading 3: Detail page section headings */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: $color-primary-dark;
+}
+
+@mixin subtitle-regular { /* Subtitle Regular: Card content headings */
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+  color: $color-text-primary-light;
+}
+
+.subtitle-regular {
+  @include subtitle-regular()
+}
+
+@mixin subtitle-bold { /* Subtitle Bold: Detail page card content headings */
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: $color-text-primary-light;
+}
+
+.subtitle-bold {
+  @include subtitle-bold;
+}
+
+@mixin body-regular { /* Body Regular: Body copy / paragraph text */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+  color: $color-text-primary-light;
+}
+
+.body-regular {
+  @include body-regular
+}
+
+@mixin body-bold { /* Body Bold: Body copy callouts / emphasis labeling */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.075px;
+  color: $color-text-primary-light;
+}
+
+.body-bold {
+  @include body-bold
+}
+
+.body-bold-secondary { /* Body Bold: with secondary text color */
+  @include body-bold;
+  color: $color-text-secondary-light;
+}
+
+@mixin text-link { /* Text Link: Inline body copy links / text links */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-decoration-line: underline;
+  color: $color-primary;
+}
+
+.text-link {
+  @include text-link;
+}
+
+@mixin caption-regular { /* Captions, labels */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: $color-text-primary-light;
+}
+
+.caption,
+.caption-regular {
+  @include caption-regular;
+}
+
+@mixin caption-medium { /* Captions, table headers, emphasis labels, etc. */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: $color-text-primary-light;
+}
+
+.caption-medium {
+  @include caption-medium
+}
+
+@mixin caption-link { /* Caption text -- inline text links */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  text-decoration-line: underline;
+  color: $color-primary;
+}
+
+.caption-link {
+  @include caption-link;
+}
+
+@mixin overline { /* Header labels */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $color-text-secondary-light;
+}
+
+.overline {
+  @include overline;
+}
+
+/* end HealthTrust UI Library */
+
+html {
+  scroll-behavior: smooth;
+}
+
+fieldset {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul:not(.directus-tag) {
+  list-style-type: none;
+}
+
+.v-input.v-text-field--outlined.v-input--is-focused {
+
+  .v-input__control {
+
+    .v-input__slot {
+
+      fieldset {
+        border-color: $color-primary;
+        border-width: 2px;
+      }
+    }
+  }
+}
+
+.v-select {
+  input::placeholder {
+    color: $color-text-primary-light !important;
+  }
+
+  .v-input__control {
+
+    .v-input__slot {
+
+      fieldset {
+        border-color: $color-text-primary-light;
+      }
+    }
+  }
+
+  .v-input__append-inner {
+
+    .v-icon {
+      color: $color-text-primary-light;
+    }
+  }
+}
+
+.input-list--surround {
+  position: relative;
+
+  .input-select--surround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid $color-text-primary-light;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+
+    .input-select {
+      background-color: transparent;
+      padding: 0.5em;
+      display: block;
+      min-height: 2.5em;
+      width: 100%;
+
+      .input--slot {
+        text-align: center;
+        display: inline;
+        font-size: 0.8125em;
+
+        .input-text {
+          background-color: $color-primary-light;
+          border-radius: 16px;
+          margin-right: 1em;
+          padding: 0.5em;
+        }
+
+        .input-icon {
+          font-size: 1.5em;
+        }
+
+        .item-label-text--additional {
+          color: $color-primary;
+          font-size: 0.8125em;
+          text-decoration: underline;
+        }
+      }
+    }
+
+
+
+    .select-icon {
+      pointer-events: none;
+
+      .icon {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .select-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: absolute;
+    top: 45px;
+    padding-top: 1em;
+    padding-left: 0;
+
+    .list-item {
+    padding-left: 1em;
+
+      .item-content {
+
+        .item-label--radio {
+
+          .item-label-icon {
+            color: $color-text-secondary-light;
+            margin-right: 0.5em;
+          }
+
+          .item-label-icon--checked {
+            color: $color-secondary-dark;
+            margin-right: 0.5em;
+          }
+
+          .item-label-text {
+            font-size: 0.9375em;
+          }
+        }
+      }
+    }
+
+    .divider {
+      height: 0.5em;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $color-linework-light 100%);
+    }
+
+    .select-button--group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0.5em;
+      height: 3.8125em;
+
+      .select-button {
+        margin: 0.5em;
+        font-weight: bold;
+        color: $color-secondary-dark;
+        border-color: $color-linework-light;
+
+        &.apply {
+          background-color: $color-primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}

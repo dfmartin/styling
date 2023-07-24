@@ -1,0 +1,62 @@
+/* HealthTrust Library */
+
+/* Brand */
+/* Primary */
+$color-primary-dark: #1E345D; /* HealthTrust Navy */
+$color-primary: #0074B8; /* MidBlue */
+$color-primary-neon: #2196F3; /* NeonBlue */
+$color-primary-light: #99CAEA; /* Light Blue */
+$color-primary-ultralight: #E2EBF2; /* Chrome Ultra Light */
+/* Secondary */
+$color-secondary-dark: #F38B00; /* HealthTrustOrange */
+
+/* Neutrals */
+/* Text on Light Surface */
+$color-text-primary-light: rgba(0, 0, 0, 0.87); /* Text Primary on Light */
+$color-text-secondary-light: rgba(0, 0, 0, 0.6); /* Text Secondary on Light */
+$color-text-disabled-light: rgba(0, 0, 0, 0.38); /* Text Disabled on Light */
+/* Text on Dark Surface */
+$white: #FFFFFF;
+$white-70: rgba(255, 255, 255, 0.7);
+$white-50: rgba(255, 255, 255, 0.5);
+/* Linework */
+$color-linework-light: rgba(0, 0, 0, 0.12); /* Line-work on Light */
+/* Background */
+$color-background-light: #F5F5F5; /* Calcite */
+$color-background-dark: #E5E5E5;
+
+/* Feedback */
+/* Error */
+$color-error-onlightsurface: #7F0000; /* Material Red 900D */
+$color-error-text: #D32F2F; /* Material Red 700 */
+$color-error-ondarksurface: #F44336; /* Material Red 500 */
+$color-error-bg: #FFEBEE; /* Material Red 50 */
+/* Warning */
+$color-warn-text: #C24400; /* A11Y Orange Text */
+$color-warn-ondarksurface: #FF9800; /* Material Orange 500 */
+$color-warn-bg: #FFF3E0; /* Material Orange 50 */
+/* Success */
+$color-success-onlightsurface: #1B5E20; /* Material Green 900 */
+$color-success-text: #2E7D32; /* Material Green 800 */
+$color-success-ondarksurface: #4CAF50; /* Material Green 500 */
+$color-success-bg: #E8F5E9; /* Material Green 50 */
+/* Primary Interactions */
+$color-primary-hover:  linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0074B8; /* MidBlue / #FFFFFF @8% */
+$color-primary-click: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #0074B8; /* MidBlue / #000000 @12% */
+/* Secondary Interactions */
+$color-secondary-hover: linear-gradient(0deg, rgba(0, 116, 184, 0.08), rgba(0, 116, 184, 0.08)), #FFFFFF; /* 8% Alpha - MidBlue */
+$color-secondary-click: linear-gradient(0deg, rgba(0, 116, 184, 0.12), rgba(0, 116, 184, 0.12)), #FFFFFF; /* 12% Alpha - MidBlue */
+ 
+/* Elevations */
+$elevation-01dp: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+$elevation-02dp: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+$elevation-03dp: 0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
+$elevation-04dp: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+$elevation-06dp: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+$elevation-08dp: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+$elevation-10dp: 0px 9px 12px rgba(0, 0, 0, 0.14), 0px 3px 16px rgba(0, 0, 0, 0.12), 0px 5px 6px rgba(0, 0, 0, 0.2);
+$elevation-12dp: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
+$elevation-16dp: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+$elevation-24dp: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
+
+/* end HealthTrust Libray */

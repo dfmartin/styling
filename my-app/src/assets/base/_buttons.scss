@@ -1,0 +1,458 @@
+/* *********************** */
+/* ------- BUTTONS ------- */
+/* *********************** */
+
+/* QUICK REFERENCE */
+
+/*
+To use the HealthTrust Library of buttons styles, 
+you can use either a <button> or <v-btn> and just 
+apply one of the following classes. You do not 
+need to specificy colors or any other props.
+
+.btn-primary-sm
+.btn-primary-sm-leading-icon
+.btn-primary-sm-following-icon
+.btn-primary-md
+.btn-primary-md-leading-icon
+.btn-primary-md-following-icon
+.btn-primary-md-icon-only
+.btn-primary-lg
+.btn-primary-lg-leading-icon
+.btn-primary-lg-following-icon
+
+.btn-secondary-sm
+.btn-secondary-sm-leading-icon
+.btn-secondary-sm-following-icon
+.btn-secondary-md
+.btn-secondary-md-leading-icon
+.btn-secondary-md-following-icon
+.btn-secondary-md-icon-only
+.btn-secondary-lg
+.btn-secondary-lg-leading-icon
+.btn-secondary-lg-following-icon
+.btn-secondary-lg-icon-only
+
+.btn-tertiary-sm-following-icon
+.btn-tertiary-md
+.btn-tertiary-md-leading-icon
+.btn-tertiary-md-following-icon 
+.btn-tertiary-md-icon-only
+
+.btn-ondark-md
+.btn-ondark-md-leading-icon
+.btn-ondark-md-following-icon
+.btn-ondark-md-icon-only
+*/
+
+@mixin btn-primary {
+  background: $color-primary !important;
+  color: $white !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background: $color-primary-hover !important;
+    box-shadow: $elevation-01dp !important;
+  }
+
+  &:active {
+    background: $color-primary-click !important;
+    box-shadow: none !important;
+  }
+
+  &:disabled {
+    color: $color-text-disabled-light !important;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #FFFFFF !important;  
+    border: none !important;
+  }
+}
+
+@mixin btn-secondary {
+  background: $white !important;
+  color: $color-primary !important;
+  border: 1px solid rgba(0, 0, 0, 0.38) !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background: $color-secondary-hover !important;
+    box-shadow: $elevation-01dp !important;
+  }
+
+  &:active {
+    background: $color-secondary-click !important;
+    border: 1px solid $color-primary !important;
+    box-shadow: none !important;
+  }
+
+  &:disabled {
+    color: $color-text-disabled-light !important;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #FFFFFF !important;  
+    border: none !important;
+  }
+}
+
+@mixin btn-secondary-activated {
+  background: $color-secondary-click !important;
+  border: 1px solid $color-primary !important;
+  box-shadow: none !important;
+}
+
+@mixin btn-tertiary {
+  background: none !important;
+  color: $color-primary !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  &:hover {
+    box-shadow: $elevation-01dp !important;
+    background: $white !important;
+  }
+
+  &:active {
+    box-shadow: none !important;
+    background: $color-secondary-click !important;
+  }
+
+  &:disabled {
+    color: $color-text-disabled-light !important;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #FFFFFF !important;  
+  }
+}
+
+@mixin btn-ondark {
+  background: none !important;
+  color: $white !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid $white !important
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.16) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+}
+
+
+@mixin btn-small {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 7px 12px !important;
+  height: 32px !important;
+  border-radius: 4px !important;
+}
+
+@mixin btn-small-leading-icon {
+  padding: 7px 12px 7px 8px !important;
+}
+
+@mixin btn-small-following-icon {
+  padding: 7px 8px 7px 12px !important;
+}
+
+@mixin btn-default {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 8px 16px !important;
+  height: 36px !important;
+  border-radius: 4px !important;
+}
+
+@mixin btn-default-leading-icon {
+  padding: 8px 16px 8px 12px !important;
+}
+
+@mixin btn-default-following-icon {
+  padding: 8px 12px 8px 16px !important;
+}
+
+@mixin btn-default-icon-only {
+  justify-content: center !important;
+  max-width: 36px !important;
+  min-width: 36px !important;
+  padding: 6px !important;
+}
+
+@mixin btn-large {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 11px 20px !important;
+  height: 42px !important;
+  border-radius: 4px !important;
+}
+
+@mixin btn-large-leading-icon {
+  padding: 9px 20px 9px 16px !important;
+}
+
+@mixin btn-large-following-icon {
+  padding: 9px 16px 9px 20px !important;
+}
+
+@mixin btn-large-icon-only {
+  justify-content: center !important;
+  max-width: 42px !important;
+  min-width: 42px !important;
+  padding: 9px !important;
+}
+
+@mixin button-text-small { /* Button, Small: MVP regular button text */
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.1px !important;
+  text-transform: capitalize !important;
+}
+
+@mixin button-text-large { /* Large button text */
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.1px !important;
+  text-transform: capitalize !important;
+}
+
+/* PRIMARY BUTTONS */
+.btn-primary-sm {
+  @include btn-primary;
+  @include btn-small;
+  @include button-text-small;
+}
+
+.btn-primary-sm-leading-icon {
+  @include btn-primary;
+  @include btn-small;
+  @include btn-small-leading-icon;
+  @include button-text-small;
+}
+
+.btn-primary-sm-following-icon {
+  @include btn-primary;
+  @include btn-small;
+  @include btn-small-following-icon;
+  @include button-text-small;
+
+}
+
+.btn-primary-md {
+  @include btn-primary;
+  @include btn-default;
+  @include button-text-large;
+}
+
+.btn-primary-md-leading-icon {
+  @include btn-primary;
+  @include btn-default;
+  @include btn-default-leading-icon;
+  @include button-text-large;
+}
+
+.btn-primary-md-following-icon {
+  @include btn-primary;
+  @include btn-default;
+  @include btn-default-following-icon;
+  @include button-text-large;
+}
+
+.btn-primary-md-icon-only {
+  @include btn-primary;
+  @include btn-default;
+  @include btn-default-icon-only;
+  @include button-text-large;
+}
+
+.btn-primary-lg {
+  @include btn-primary;
+  @include btn-large;
+  @include button-text-large;
+}
+
+.btn-primary-lg-leading-icon {
+  @include btn-primary;
+  @include btn-large;
+  @include btn-large-leading-icon;
+  @include button-text-large;
+}
+
+.btn-primary-lg-following-icon {
+  @include btn-primary;
+  @include btn-large;
+  @include btn-large-following-icon;
+  @include button-text-large;
+}
+
+/* SECONDARY BUTTONS */
+.btn-secondary-sm {
+  @include btn-secondary;
+  @include btn-small;
+  @include button-text-small;
+}
+
+.btn-secondary-sm-leading-icon {
+  @include btn-secondary;
+  @include btn-small;
+  @include btn-small-leading-icon;
+  @include button-text-small;
+}
+
+.btn-secondary-sm-following-icon {
+  @include btn-secondary;
+  @include btn-small;
+  @include btn-small-following-icon;
+  @include button-text-small;
+}
+
+.btn-secondary-md {
+  @include btn-secondary;
+  @include btn-default;
+  @include button-text-large;
+}
+
+.btn-secondary-md-leading-icon {
+  @include btn-secondary;
+  @include btn-default;
+  @include btn-default-leading-icon;
+  @include button-text-large;
+}
+
+.btn-secondary-md-following-icon {
+  @include btn-secondary;
+  @include btn-default;
+  @include btn-default-following-icon;
+  @include button-text-large;
+}
+
+.btn-secondary-md-icon-only {
+  @include btn-secondary();
+  @include btn-default;
+  @include btn-default-icon-only;
+  @include button-text-large;
+}
+
+.btn-secondary-lg {
+  @include btn-secondary;
+  @include btn-large;
+  @include button-text-large;
+}
+
+.btn-secondary-lg-activated {
+  @include btn-secondary;
+  @include btn-large;
+  @include button-text-large;
+  @include btn-secondary-activated;
+}
+
+.btn-secondary-lg-leading-icon {
+  @include btn-secondary;
+  @include btn-large;
+  @include btn-large-leading-icon;
+  @include button-text-large;
+}
+
+.btn-secondary-lg-following-icon {
+  @include btn-secondary;
+  @include btn-large;
+  @include btn-large-following-icon;
+  @include button-text-large;
+}
+
+.btn-secondary-lg-icon-only {
+  @include btn-secondary;
+  @include btn-large;
+  @include btn-large-icon-only;
+  @include button-text-large;
+}
+
+/* TERTIARY BUTTONS */
+.btn-tertiary-sm {
+  @include btn-tertiary;
+  @include btn-small;
+  @include button-text-small;
+}
+
+.btn-tertiary-sm-following-icon {
+  @include btn-tertiary;
+  @include btn-small;
+  @include button-text-small;
+  color: $color-text-primary-light;
+}
+
+.btn-tertiary-md {
+  @include btn-tertiary;
+  @include btn-default;
+  @include button-text-large;
+}
+
+.btn-tertiary-md-leading-icon {
+  @include btn-tertiary;
+  @include btn-default;
+  @include btn-default-leading-icon;
+  @include button-text-large;
+}
+
+.btn-tertiary-md-following-icon {
+  @include btn-tertiary;
+  @include btn-default;
+  @include btn-default-following-icon;
+  @include button-text-large;
+}
+
+.btn-tertiary-md-icon-only {
+  @include btn-tertiary;
+  @include btn-default;
+  @include btn-default-icon-only;
+  @include button-text-large;
+}
+
+/* ON DARK BUTTONS */
+.btn-ondark-md {
+  @include btn-ondark;
+  @include btn-default;
+  @include button-text-large;
+}
+
+.btn-ondark-md-leading-icon {
+  @include btn-ondark;
+  @include btn-default;
+  @include btn-default-leading-icon;
+  @include button-text-large;
+}
+
+.btn-ondark-md-following-icon {
+  @include btn-ondark;
+  @include btn-default;
+  @include btn-default-following-icon;
+  @include button-text-large;
+}
+
+.btn-ondark-md-icon-only {
+  @include btn-ondark;
+  @include btn-default;
+  @include btn-default-icon-only;
+  @include button-text-large;
+}
+  
+.button-text-large-only {
+  @include button-text-large;
+}
+
+/* VUETIFY V-BTN OVERWRITES */
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #FFFFFF !important;  
+}
+
+.theme--light.v-btn.v-btn--disabled {
+  color: $color-text-disabled-light !important;
+}
+
+.theme--light.v-btn:focus::before,
+.theme--light.v-btn:hover::before,
+.v-ripple__container {
+  opacity: 0 !important;
+}

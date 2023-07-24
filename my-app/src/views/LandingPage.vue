@@ -2,5 +2,5 @@
 
 </script>
 <template>
-<div>hello</div>
+<div><v-btn class="btn-primary-md">hello</v-btn></div>
 </template>
