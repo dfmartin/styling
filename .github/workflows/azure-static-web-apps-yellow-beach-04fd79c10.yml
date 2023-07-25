@@ -5,13 +5,13 @@ on:
     branches:
       - main
     paths:
-      - my-app
+      - 'my-app/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
     paths:
-      - my-app
+      - 'my-app/**'
 
 jobs:
   build_and_deploy_job:
