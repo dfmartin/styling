@@ -232,6 +232,10 @@ need to specificy colors or any other props.
   @include btn-small;
   @include btn-small-leading-icon;
   @include button-text-small;
+
+  & i {
+    margin-right: 4px;
+  }
 }
 
 .btn-primary-sm-following-icon {
@@ -253,6 +257,10 @@ need to specificy colors or any other props.
   @include btn-default;
   @include btn-default-leading-icon;
   @include button-text-large;
+
+  & i {
+    margin-right: 4px;
+  }
 }
 
 .btn-primary-md-following-icon {
@@ -280,6 +288,10 @@ need to specificy colors or any other props.
   @include btn-large;
   @include btn-large-leading-icon;
   @include button-text-large;
+
+  & i {
+    margin-right: 6px;
+  }
 }
 
 .btn-primary-lg-following-icon {
