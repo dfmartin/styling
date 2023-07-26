@@ -1,0 +1,48 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="General/Colors" order />
+
+## Brand
+<ColorPalette>
+    <ColorItem
+        title="Primary"
+        subTitle="primary colors"
+        colors={{
+            'color-primary-dark': '#1E345D',
+            'color-primary': '#0074B8',
+            'color-primary-light': '#99CAEA',
+            '[undefined]': '#E2EBF2',
+        }}
+    />    
+</ColorPalette>
+
+## Primary
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fill, min-max(120px, 175px))', gridGap: '20px'}}>
+    <ColorItem
+        title="HealthTrust Navy"
+        subTitle="color-primary-dark"
+        colors={{'color-primary-dark': '#1E345D'}}
+    />
+
+    <ColorItem
+        title="MidBlue"
+        subTitle="color-primary"
+        colors={{'color-primary': '#0074B8'}}
+    />
+
+    <ColorItem
+        title="Light Blue"
+        subTitle="color-primary-light"
+        colors={{'color-primary-light': '#99CAEA'}}
+    />
+
+    <ColorItem
+        title="Chrome Ultra Light"
+        subTitle="[undefined]"
+        colors={{'[undefined]': '#E2EBF2'}}
+    />
+</div>
+{/* Colors.mdx */}
+
+
+

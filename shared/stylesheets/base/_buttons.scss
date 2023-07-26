@@ -390,6 +390,14 @@ need to specificy colors or any other props.
   @include button-text-small;
 }
 
+.btn-tertiary-sm-leading-icon {
+  @include btn-tertiary;
+  @include btn-small;
+  @include btn-default-leading-icon;
+  @include button-text-small;
+}
+
+
 .btn-tertiary-sm-following-icon {
   @include btn-tertiary;
   @include btn-small;
@@ -421,6 +429,34 @@ need to specificy colors or any other props.
   @include btn-tertiary;
   @include btn-default;
   @include btn-default-icon-only;
+  @include button-text-large;
+}
+
+
+.btn-tertiary-lg {
+  @include btn-tertiary;
+  @include btn-large;
+  @include button-text-large;
+}
+
+.btn-tertiary-lg-leading-icon {
+  @include btn-tertiary;
+  @include btn-large;
+  @include btn-large-leading-icon;
+  @include button-text-large;
+}
+
+.btn-tertiary-lg-following-icon {
+  @include btn-tertiary;
+  @include btn-large;
+  @include btn-large-following-icon;
+  @include button-text-large;
+}
+
+.btn-tertiary-lg-icon-only {
+  @include btn-tertiary;
+  @include btn-large;
+  @include btn-large-icon-only;
   @include button-text-large;
 }
 

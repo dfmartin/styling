@@ -86,3 +86,53 @@ $elevation-16dp: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0
 $elevation-24dp: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
 
 /* end HumanTouch Libray */
+
+:export {
+    primary: {
+        dark: {
+            name: 'HealthTrust Navy';
+            color: $color-primary-dark;
+        }
+
+        ;
+
+        primary: {
+            name: 'MidBlue';
+            color: $color-primary;
+        }
+
+        ;
+
+        light: {
+            name: 'Light Blue';
+            color: $color-primary-light;
+        }
+
+        ;
+
+        light: {
+            name: 'Chrome Ultra Light';
+            color: $color-primary-ultralight;
+        }
+
+        ;
+    }
+
+    ;
+}
+
+/*
+:export {
+    primary: {
+        dark: {
+            name: 'HealthTrust Navy'
+        }
+    }
+    colorPrimaryDark: $color-primary-dark;
+    colorPrimary: $color-primary;
+    colorPrimaryNeon: $color-primary-neon;
+    colorPrimaryLight: $color-primary-light;
+    colorPrimaryUltralight: $color-primary-ultralight;
+
+}
+*/
